@@ -39,6 +39,15 @@ Para esse exercício, vamos explorar as funcionalidades citadas,  conforme exemp
 
 SELECT ai_translate('Hello, how are you?', 'br') as traducao;
 
+SELECT ai_analyze_sentiment('O atendimento foi excelente, muito rápido e atencioso!') AS sentimento;
+
+SELECT ai_classify(
+  'O cliente pediu reembolso pois o produto veio danificado.',
+  ARRAY('elogio', 'reclamação', 'pedido', 'elogio ao suporte')
+) AS categoria;
+
+SELECT ai_mask('O CPF do cliente é 123.456.789-10 e o e-mail é joao.silva@email.com') AS texto_mascarado;
+
 
 ```
 
