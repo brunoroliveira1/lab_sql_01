@@ -1,6 +1,6 @@
 <img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/header_handson_sql.png">
 
-# Hands-On LAB 04 - Criação de um ALERTA
+# Hands-On LAB 02 - Criação de um ALERTA
 
 Treinamento Hands-on na plataforma Databricks com foco nas funcionalidades de Analytics (SQL, Query, Dask, DataViz, SQL end-point).
 
@@ -11,7 +11,7 @@ O objetivo desse laboratório é explorar as funcionalidade de criação de um A
 
 </br></br>
 
-## Exercício 04.01 - Criação da Query
+## Exercício 02.01 - Criação da Query
 
 ``` sql
 
@@ -26,7 +26,7 @@ Grave a Query.  Sugestão:  "Query_Alert"+ <SEU_LOGIN>
 </br></br>
 
 
-## Exercício 04.02 - Criando o Alerta
+## Exercício 02.02 - Criando o Alerta
 
 Vamos utilizar a opção do menu  "**ALERT**".
 

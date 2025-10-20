@@ -1,6 +1,6 @@
 <img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/header_handson_sql.png">
 
-# Hands-On LAB 05 - Criando uma visualização na QUERY
+# Hands-On LAB 03 - Criando uma visualização na QUERY
 
 Treinamento Hands-on na plataforma Databricks com foco nas funcionalidades de Analytics (SQL, Query, Dask, DataViz, SQL end-point).
 
@@ -12,7 +12,7 @@ O objetivo desse laboratório é explorar as funcionalidade de consultas com Gr�
 
 Vamos utilizar o "Editor SQL".
 
-## Exercício 05.01 - Criação da Query
+## Exercício 03.01 - Criação da Query
 
 ``` sql
 
@@ -25,7 +25,7 @@ Resultado da Query:
 <img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/lab05_01.png" style="height: 200px;">
 </br></br>
 
-## Exercício 05.02 - Criando a Visualização e o Filtro
+## Exercício 03.02 - Criando a Visualização e o Filtro
 
 Na barra de resultados, clique no botão **"+"**, e escolha a opção "Visualization".
 
