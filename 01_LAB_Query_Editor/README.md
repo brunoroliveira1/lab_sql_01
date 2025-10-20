@@ -45,7 +45,7 @@ USE <seu_nome_login>;
 
 ``` sql
 
-CREATE OR REPLACE TABLE bronze_porte_empresa 
+CREATE OR REPLACE TABLE bronze_porte_empresa_{seu_nome} 
   ( porte_empresa      INT    COMMENT "codigo do porte da empresa",
     desc_porte_empresa STRING COMMENT "descricao do porte da empresa" )
 COMMENT "Tabela auxiliar do porte das empresas"
@@ -54,60 +54,60 @@ COMMENT "Tabela auxiliar do porte das empresas"
  ## Exercício 01.03 - Inserindo dados na Tabela através de SQL INSERT
 
  ``` sql
- INSERT INTO bronze_porte_empresa VALUES (1, "NAO INFORMADO") ;
- INSERT INTO bronze_porte_empresa VALUES (2, "MICRO EMPRESA") ;
- INSERT INTO bronze_porte_empresa VALUES (3, "PEQUENO PORTE") ;
- INSERT INTO bronze_porte_empresa VALUES (4, "NAO SEI") ;
- INSERT INTO bronze_porte_empresa VALUES (5, "NULL") ;
+ INSERT INTO bronze_porte_empresa_{seu_nome} VALUES (1, "NAO INFORMADO") ;
+ INSERT INTO bronze_porte_empresa_{seu_nome} VALUES (2, "MICRO EMPRESA") ;
+ INSERT INTO bronze_porte_empresa_{seu_nome} VALUES (3, "PEQUENO PORTE") ;
+ INSERT INTO bronze_porte_empresa_{seu_nome} VALUES (4, "NAO SEI") ;
+ INSERT INTO bronze_porte_empresa_{seu_nome} VALUES (5, "NULL") ;
 ```
 
  ## Exercício 01.04 - Verificando o conteúdo da TABELA
 
  ``` sql
 SELECT * 
-FROM bronze_porte_empresa 
+FROM bronze_porte_empresa_{seu_nome} 
 ORDER BY porte_empresa
 ```
 
  ## Exercício 01.05 - Alterando o conteúdo da TABELA
 
  ``` sql
-UPDATE bronze_porte_empresa  
+UPDATE bronze_porte_empresa_{seu_nome}  
 SET desc_porte_empresa = "OUTROS" 
 WHERE porte_empresa = 5;
 
 
 DELETE 
-FROM bronze_porte_empresa 
+FROM bronze_porte_empresa_{seu_nome} 
 WHERE porte_empresa = 4;
 ```
 
 ## Exercício 01.06 - Visualizando o Histórico de Atualizações da tabela
 
  ``` sql
-DESCRIBE HISTORY bronze_porte_empresa 
+DESCRIBE HISTORY bronze_porte_empresa_{seu_nome} 
 ```
 
 ## Exercício 01.07 - Visualizando o conteúdo da tabela na versão anterior (TIME TRAVEL)
 
  ``` sql
-SELECT * FROM bronze_porte_empresa VERSION AS OF 5
+SELECT * FROM bronze_porte_empresa_{seu_nome} VERSION AS OF 5
 ```
 
 ## Exercício 01.08 - RESTAURANDO o conteúdo da tabela na versão anterior (TIME TRAVEL)
 
  ``` sql
-RESTORE TABLE bronze_porte_empresa TO VERSION AS OF 5 
+RESTORE TABLE bronze_porte_empresa_{seu_nome} TO VERSION AS OF 5 
 ```
 
 ## Exercício 01.09 - Visualizando as propriedades da Tabela
 
  ``` sql
-DESCRIBE DETAIL bronze_porte_empresa 
+DESCRIBE DETAIL bronze_porte_empresa_{seu_nome} 
 ```
 
 ## Exercício 01.10 - Visualizando as informações DETALHADAS da Tabela
 
  ``` sql
-DESCRIBE TABLE EXTENDED bronze_porte_empresa
+DESCRIBE TABLE EXTENDED bronze_porte_empresa_{seu_nome}
 ```
