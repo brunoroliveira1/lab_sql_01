@@ -46,8 +46,6 @@ SELECT ai_classify(
   ARRAY('elogio', 'reclamação', 'pedido', 'elogio ao suporte')
 ) AS categoria;
 
-SELECT ai_mask('O CPF do cliente é 123.456.789-10 e o e-mail é joao.silva@email.com') AS texto_mascarado;
-
 
 ```
 
