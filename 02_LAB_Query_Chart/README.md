@@ -58,23 +58,3 @@ O resultado esperado é igual ao gráfico abaixo:
 
 </br></br>
 
-Clique novamente no botão **"+"**, e adicione um FILTRO:
-
-<img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/lab05_09.png" style="height: 150px;">
-
-</br></br>
-
-Escolha a coluna "dolar_ano" para utilizar no FILTRO:
-
-<img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/lab05_10.png" style="height: 300px;">
-
-</br></br>
-Resultado ficará como abaixo:
-
-<img src="https://raw.githubusercontent.com/Databricks-BR/lab_sql/main/images/lab05_11.png" style="height: 250px;">
-
-</br></br>
-
-Salve o resultado da Query, com o nome:   "Query_Historico_dolar_" +  <SEU_NOME>.
-</br></br></br>
-
